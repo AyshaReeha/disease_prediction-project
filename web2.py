@@ -3,6 +3,10 @@ import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
+parkinsons_model_path = os.path.join(BASE_DIR, "training-models", "parkinson_model.sav")
 st.set_page_config(page_title='Prediction of Disease Outbreaks',
                    layout='wide',
                    page_icon="🧑‍⚕️")
