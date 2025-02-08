@@ -8,9 +8,13 @@ st.set_page_config(page_title='Prediction of Disease Outbreaks',
                    page_icon="🧑‍⚕️")
 
 # Load Models
-diabetes_model = pickle.load(open(r"C:\Users\ASUS\OneDrive\Documents\disease-outbreak\training-models\diabetes_model.sav", 'rb'))
-heart_model = pickle.load(open(r"C:\Users\ASUS\OneDrive\Documents\disease-outbreak\training-models\heart_model.sav", 'rb'))
-parkinsons_model = pickle.load(open(r"C:\Users\ASUS\OneDrive\Documents\disease-outbreak\training-models\parkinson_model.sav", 'rb'))
+#diabetes_model = pickle.load(open(r"C:\Users\ASUS\OneDrive\Documents\disease-outbreak\training-models\diabetes_model.sav", 'rb'))
+#heart_model = pickle.load(open(r"C:\Users\ASUS\OneDrive\Documents\disease-outbreak\training-models\heart_model.sav", 'rb'))
+#parkinsons_model = pickle.load(open(r"C:\Users\ASUS\OneDrive\Documents\disease-outbreak\training-models\parkinson_model.sav", 'rb'))
+diabetes_model_path = os.path.join(BASE_DIR, "training-models", "diabetes_model.sav")
+heart_model_path = os.path.join(BASE_DIR, "training-models", "heart_model.sav")
+parkinsons_model_path = os.path.join(BASE_DIR, "training-models", "parkinson_model.sav")
+
 
 # Sidebar for navigation
 with st.sidebar:
