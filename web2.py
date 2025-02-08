@@ -109,12 +109,12 @@ elif selected == 'Parkinsons Disease Prediction':
 
         with col3:
             Shimmer_APQ5 = st.text_input('Shimmer_APQ5')
-            HNR = st.text_input('HNR')
             RPDE = st.text_input('RPDE')
             DFA = st.text_input('DFA')
             spread1 = st.text_input('Spread1')
             spread2 = st.text_input('Spread2')
             D2 = st.text_input('D2')
+            HNR=st.text_input('HNR')
 
         if st.button("Parkinson's Disease Test Result"):
             
